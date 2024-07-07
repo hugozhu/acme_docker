@@ -1,0 +1,11 @@
+version: "3"
+services:
+  acme:
+    image: neilpang/acme.sh
+    container_name: acme
+    #restart: always
+    command: daemon
+    env_file:
+     - .env
+    volumes:
+      - ./cert:/acme.sh
