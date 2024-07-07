@@ -8,6 +8,7 @@ DP_Id=<id_from_dnspod>
 DP_Key=<token_from_dnspod>
 ```
 
+run following commands to renew ssls
 ```
 touch .env
 docker-compose up -d
