@@ -1,10 +1,12 @@
 # acme_docker
 docker deployment for auto SSLs
 
-Get DNSPod token from https://console.dnspod.cn/account/token/token
+Get DNSPod token from https://console.dnspod.cn/account/token/token and save to .env
 
+```
 DP_Id=<id_from_dnspod>
 DP_Key=<token_from_dnspod>
+```
 
 ```
 touch .env
