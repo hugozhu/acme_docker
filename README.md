@@ -1,7 +1,13 @@
 # acme_docker
 docker deployment for auto SSLs
 
+Get DNSPod token from https://console.dnspod.cn/account/token/token
+
+DP_Id=<id_from_dnspod>
+DP_Key=<token_from_dnspod>
+
 ```
+touch .env
 docker-compose up -d
 docker exec acme acme.sh --set-default-ca --server letsencrypt
 docker exec acme acme.sh --issue --dns dns_dp  -d hugozhu.site -d *.hugozhu.site -d *.go.hugozhu.site
